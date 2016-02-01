@@ -5,11 +5,11 @@ require File.dirname(__FILE__) + "/lib/redux/version"
 Gem::Specification.new do |gem|
   gem.name          = "redux"
   gem.version       = Redux::VERSION
-  gem.summary       = "TODO"
-  gem.description   = "TODO"
+  gem.summary       = "redux.rb"
+  gem.description   = "Tiny Redux implementation in Ruby."
   gem.authors       = ["Jan Lelis"]
   gem.email         = ["mail@janlelis.de"]
-  gem.homepage      = "https://github.com/janlelis/redux"
+  gem.homepage      = "https://github.com/janlelis/redux.rb"
   gem.license       = "MIT"
 
   gem.files         = Dir["{**/}{.*,*}"].select{ |path| File.file?(path) && path !~ /^pkg/ }
