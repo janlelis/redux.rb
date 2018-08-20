@@ -1,6 +1,6 @@
 ## CHANGELOG
 
-### Next
+### 0.1.1
 
 * Redux.combine_reducers
 
