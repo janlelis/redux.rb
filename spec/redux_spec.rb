@@ -55,5 +55,39 @@ describe Redux do
       end
     end
   end
+
+  describe ".combine_reducers" do
+    it "combines reducers" do
+      potato_reducer = ->(state = 0, action) {
+        case action['type']
+        when "WORK"
+          state + 1
+        else
+          state
+        end
+      }
+
+      tomato_reducer = ->(state = 0, action) {
+        case action['type']
+        when "WORK"
+          state - 1
+        else
+          state
+        end
+      }
+
+      root_reducer = Redux.combine_reducers({potato: potato_reducer, tomato: tomato_reducer})
+      store = Redux::Store.new({}, &root_reducer)
+      store.dispatch "type" => "WORK"
+
+      assert_equal(
+        {
+          potato: 1,
+          tomato: -1,
+        },
+        store.state
+      )
+    end
+  end
 end
 
