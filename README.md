@@ -1,6 +1,6 @@
-# redux.rb [![[version]](https://badge.fury.io/rb/redux.svg)](http://badge.fury.io/rb/redux)  [![[travis]](https://travis-ci.org/janlelis/redux.rb.png)](https://travis-ci.org/janlelis/redux.rb)
+# redux.rb [![[version]](https://badge.fury.io/rb/redux.svg)](https://badge.fury.io/rb/redux)  [![[ci]](https://github.com/janlelis/redux.rb/workflows/Test/badge.svg)](https://github.com/janlelis/redux.rb/actions?query=workflow%3ATest)
 
-A [Redux](https://github.com/rackt/redux) implementation in Ruby.
+A [Redux](https://github.com/reduxjs/redux) implementation in Ruby.
 
 
 ## Setup
@@ -34,4 +34,4 @@ store.state # => 1
 
 ## MIT License
 
-Copyright (C) 2016 Jan Lelis <http://janlelis.com>. Released under the MIT license.
+Copyright (C) 2016 Jan Lelis <https://janlelis.com>. Released under the MIT license.
